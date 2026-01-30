@@ -14,7 +14,7 @@ class Autocommit < Formula
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
 
       def install
-        bin.install "autocommit"
+        bin.install "autocommit-macos-arm64" => "autocommit"
       end
     end
     if Hardware::CPU.arm?
@@ -22,7 +22,7 @@ class Autocommit < Formula
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
 
       def install
-        bin.install "autocommit"
+        bin.install "autocommit-macos-arm64" => "autocommit"
       end
     end
   end
@@ -32,14 +32,14 @@ class Autocommit < Formula
       url "https://github.com/jsmenzies/autocommit/releases/download/v0.1.0-zig-test/autocommit-macos-arm64"
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
       def install
-        bin.install "autocommit"
+        bin.install "autocommit-macos-arm64" => "autocommit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jsmenzies/autocommit/releases/download/v0.1.0-zig-test/autocommit-macos-arm64"
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
       def install
-        bin.install "autocommit"
+        bin.install "autocommit-macos-arm64" => "autocommit"
       end
     end
   end
