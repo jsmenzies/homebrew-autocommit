@@ -5,12 +5,12 @@
 class Autocommit < Formula
   desc "AI-powered git commit message generator"
   homepage "https://github.com/jsmenzies/autocommit"
-  version "0.1.0-zig-test"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v0.1.0-zig-test/autocommit-macos-arm64"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v2.0.0/autocommit-macos-arm64"
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
 
       def install
@@ -18,7 +18,7 @@ class Autocommit < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v0.1.0-zig-test/autocommit-macos-arm64"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v2.0.0/autocommit-macos-arm64"
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
 
       def install
@@ -29,14 +29,14 @@ class Autocommit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v0.1.0-zig-test/autocommit-macos-arm64"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v2.0.0/autocommit-macos-arm64"
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
       def install
         bin.install "autocommit-macos-arm64" => "autocommit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v0.1.0-zig-test/autocommit-macos-arm64"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v2.0.0/autocommit-macos-arm64"
       sha256 "825eb01a855aa6dc7e01d4689a37f68a4104a832054d985d2c5c0933fce4839f"
       def install
         bin.install "autocommit-macos-arm64" => "autocommit"
