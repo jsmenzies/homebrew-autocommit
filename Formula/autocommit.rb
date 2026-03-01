@@ -5,21 +5,21 @@
 class Autocommit < Formula
   desc "AI-powered git commit message generator"
   homepage "https://github.com/jsmenzies/autocommit"
-  version "3.2.1"
+  version "3.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.1/autocommit-macos-arm64"
-      sha256 "1c90eca02e15becc107a67fbbaf2950b444e75cb5b257b525d52a615ce5e0750"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.2/autocommit-macos-arm64"
+      sha256 "bc7e638098aab5f3ca1a6ee871f5abd782e95da2d992ee6b130e9b3dcc2b1a7a"
 
       def install
         bin.install "autocommit-macos-arm64" => "autocommit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.1/autocommit-macos-arm64"
-      sha256 "1c90eca02e15becc107a67fbbaf2950b444e75cb5b257b525d52a615ce5e0750"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.2/autocommit-macos-arm64"
+      sha256 "bc7e638098aab5f3ca1a6ee871f5abd782e95da2d992ee6b130e9b3dcc2b1a7a"
 
       def install
         bin.install "autocommit-macos-arm64" => "autocommit"
@@ -29,15 +29,15 @@ class Autocommit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.1/autocommit-macos-arm64"
-      sha256 "1c90eca02e15becc107a67fbbaf2950b444e75cb5b257b525d52a615ce5e0750"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.2/autocommit-macos-arm64"
+      sha256 "bc7e638098aab5f3ca1a6ee871f5abd782e95da2d992ee6b130e9b3dcc2b1a7a"
       def install
         bin.install "autocommit-macos-arm64" => "autocommit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.1/autocommit-macos-arm64"
-      sha256 "1c90eca02e15becc107a67fbbaf2950b444e75cb5b257b525d52a615ce5e0750"
+      url "https://github.com/jsmenzies/autocommit/releases/download/v3.2.2/autocommit-macos-arm64"
+      sha256 "bc7e638098aab5f3ca1a6ee871f5abd782e95da2d992ee6b130e9b3dcc2b1a7a"
       def install
         bin.install "autocommit-macos-arm64" => "autocommit"
       end
