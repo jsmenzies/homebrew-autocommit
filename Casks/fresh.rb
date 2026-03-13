@@ -3,7 +3,7 @@ cask "fresh" do
   name "fresh"
   desc "A CLI tool for interactively managing the status of multiple Git repositories"
   homepage "https://github.com/jsmenzies/fresh"
-  version "1.12.1"
+  version "1.13.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "fresh" do
   on_macos do
     on_intel do
       url "https://github.com/jsmenzies/fresh/releases/download/v#{version}/fresh_#{version}_darwin_amd64.tar.gz"
-      sha256 "527323e214bcb1711258a773dd54afc4e8a7937aa09124edd68fa6cb6dcb3e56"
+      sha256 "a173a90f6eae04d3fc5468ce657f1423d2840cbb734271c2fe8d7881d89d4d8c"
     end
     on_arm do
       url "https://github.com/jsmenzies/fresh/releases/download/v#{version}/fresh_#{version}_darwin_arm64.tar.gz"
-      sha256 "e443ee6a4294f608b960b6b563a95a5fe7f80bb28bd1d4d8c932c9afbc206f53"
+      sha256 "59150cf86eec5ef71ba6f1f87971bf8ed516e68d22382f678b4bc374633ac8fc"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jsmenzies/fresh/releases/download/v#{version}/fresh_#{version}_linux_amd64.tar.gz"
-      sha256 "586a3e7dbd5089cd63bb15b299c10659c4144f5a3ea5bb29c64c027d183fa8c6"
+      sha256 "3923f678ecde4f2faaef8981cfa3e43f3d9dc9f804ea1a8992ba9fb28113e2e5"
     end
     on_arm do
       url "https://github.com/jsmenzies/fresh/releases/download/v#{version}/fresh_#{version}_linux_arm64.tar.gz"
-      sha256 "0e48969fbd7baf0104d02beec90172219e0c874bf559904c924a87df8c779ec2"
+      sha256 "807a960fc29b9f69089da2150ab1ab77a5b75da0ac95b940d45a8e4a9d1ab4aa"
     end
   end
 
